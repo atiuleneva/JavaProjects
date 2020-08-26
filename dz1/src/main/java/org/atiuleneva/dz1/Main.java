@@ -1,5 +1,7 @@
 package org.atiuleneva.dz1;
 
+import java.time.Year;
+
 public class Main {
     // #2. Создать переменные всех пройденных типов данных, и инициализировать их значения;
     int a = 1000000000;
@@ -33,6 +35,10 @@ public class Main {
 
         //#7
         printName ("Anna");
+
+        //#8
+
+        isLeapYear(2021);
 
 
     }
@@ -79,4 +85,22 @@ public class Main {
         System.out.println("Hello, " + name + "!");
     }
 
+    // #8
+
+    public static void isLeapYear ( int a){
+         if (a%400 == 0){
+            System.out.println("Год високосный");
+        }
+        else if (a%100 == 0){
+            System.out.println("Год невисокосный");
+        }
+        else if (a%4 == 0){
+             System.out.println( "Год високосный");
+
+        }
+        else System.out.println("Год невисокосный");
+    }
+
+
 }
+
